@@ -1,0 +1,167 @@
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[top=0.7in, bottom=0.7in, left=0.8in, right=0.8in]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jing} % Your first name
+\familyname{Xia} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{4 Martine Ave, Apt 512}{White Plains, NY, 10606}
+\mobile{+1 (518) 650 4772}
+%\phone{(518) 650 4772}
+%\fax{(000) 111 1113}
+\email{xiajingfightfordream@hotmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.3pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Thinking how brain thinks" - Qianli Yang}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Summary}  {\small Leader of machine learning projects focused on prediction and geospatial data analysis using PySpark on AWS. Familiar with regression, time series, SVM and neural network models. Possessed technical and fundamental knowledge in financial and technology industry. Experienced in Python, Hive SQL and PySpark.}
+
+\section{Education}
+\cventry{08/2014-12/2015}{M.S., Quantitative Finance and Risk Analytics}{Rensselaer Polytechnic Institute (RPI)}{Troy, NY}{\textit{GPA: 3.94/4.00}}{}
+%Second Place in Financial Modeling Competition
+\cventry{09/2009-06/2013}{B.S., Finance}{Jinan University}{Guangzhou, China}{{GPA: 89/100}}{}
+%2013 Outstanding Student Leadership Award
+%\section{Masters Thesis}
+%%
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+\cventry{10/2017-present}{Associate Data Scientist}
+{Point72}
+{New York, NY}{}
+{\begin{itemize}  %\itemsep -2pt %reduce space between items
+	\item Improved the quarter to day revenue prediction by 1 month earlier at the same accuracy level, using time series model.
+	\item Provided revenue prediction for public companies based on 10 million clickstream data.
+	\item Built cohort tool for users to visualize customer retention trend, cross shop rate and total sale distribution across the States.
+\end{itemize}}
+
+\cventry{02/2016-09/2017}{Data Scientist}
+{IBM}
+{North Castle, NY}{}
+{\begin{itemize}  %\itemsep -2pt %reduce space between items
+	\item Established customers' profile based on users' daily activities observed from geolocation data and recommended customer segment in target marketing business.
+	\item Developed a methodology to assign users' geolocation to nearby POIs with probability to increase the quantity of useful geolocation data in all geolocation analysis by 4 times.
+	\item Identified features from over 180,000 captions of art work pictures scraped from social media website to establish database, preparing for deep learning algorithm.
+\end{itemize}}
+
+\cventry{06/2015-08/2015}{Financial Data Analyst Intern}
+{Moody's Analytics}
+{New York, NY}{}
+{\begin{itemize}  %\itemsep -2pt %reduce space between items
+	\item Reduced company's manpower costs by creating trigger-calculation algorithms using SQL server. %SQL Server and Python
+	\item Increased the efficiency of evaluating structured finance triggers by automatically parsing model scripts using SQL server. %SQL server
+	\item Created Trigger Mapping workbook by writing Excel VBA Macros to extract Mortgage-Backed Security trigger data automatically from over 5000 documents. %VBA
+\end{itemize}}
+
+%\cventry{01/2015-12/2015}{Teaching Assistant}
+%{Mathematics Department, Rensselaer Polytechnic Institute (RPI)}
+%{Troy, NY}{}
+%{\begin{itemize}  %\itemsep -2pt %reduce space between items
+%     \item Won score of 4.86 out of 5 in final teaching assistant evaluation based on giving 4 recitation classes a week, solving problems and explaining homework for over 100 students.
+%        \end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Project}
+
+\cventry{10/2014}{Course Project}
+{Monte Carlo Method to Initiate and Optimize European and American Option Pricing}
+{Troy, NY}{}
+{\begin{itemize}  %\itemsep -2pt %reduce space between items
+    \item Visualized stock price fluctuations using Monte Carlo method by MATLAB, in which 1000 paths of stock price trend was simulated. % code
+    \item Reduced option price risks using Control Variate Method to minimize the price variance via MATLAB. %apply tech and code
+\end{itemize}}
+                
+%----------------------------------------------------------------------------------------
+%	ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+%{\small
+%\section{Activities}
+%{\begin{itemize} 
+%\item 2014: Volunteer of Campus Tour for Guangzhou 100 primary school students
+%\item 2013: Chief organizer of 2013 Graduation Ceremony in School of Economics
+%\item 2012: Chief organizer of 2012 Jinan University New Year Performance
+%	\end{itemize}}}
+
+\section{Courses and Skills}
+{\small
+%\cvitem{Courses}
+%{Financial Econometrics, Financial Modeling, Machine Learning from Data, Fixed Income, Statistics and Probability}
+\cvitem{Skills}
+{Python, Apache Spark, Hadoop, SQL, LaTeX}}
+%
+%%----------------------------------------------------------------------------------------
+%%	COVER LETTER
+%%----------------------------------------------------------------------------------------
+%
+%% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+\end{document}
